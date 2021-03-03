@@ -138,6 +138,7 @@ class Plugin::Nexpose < Msf::Plugin
             @trust_cert = File.read(@trust_cert_file)
           else
             @sslv = @trust_cert_file
+            @trust_cert = nil
           end
         end
       else
